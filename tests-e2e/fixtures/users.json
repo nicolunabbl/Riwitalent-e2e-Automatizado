@@ -1,0 +1,12 @@
+[
+  {
+    "role": "admin",
+    "envEmail": "E2E_ADMIN_EMAIL",
+    "envPass": "E2E_ADMIN_PASS"
+  },
+  {
+    "role": "comercial",
+    "envEmail": "E2E_COMERCIAL_EMAIL",
+    "envPass": "E2E_COMERCIAL_PASS"
+  }
+]

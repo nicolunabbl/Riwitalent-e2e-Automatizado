@@ -1,0 +1,23 @@
+{
+    "name": "riwitalent-e2e",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "devDependencies": {
+        "@playwright/test": "^1.55.1",
+        "@types/node": "^24.6.0",
+        "dotenv": "^16.4.5",
+        "prettier": "^3.3.3",
+        "typescript": "^5.6.2"
+    },
+    "scripts": {
+        "postinstall": "playwright install --with-deps",
+        "e2e": "playwright test tests-e2e",
+        "e2e:smoke": "playwright test tests-e2e --grep @smoke",
+        "e2e:headed": "playwright test tests-e2e --headed --project=chromium",
+        "e2e:ui": "playwright test tests-e2e --ui",
+        "e2e:report": "playwright show-report tests-e2e/reports/html",
+        "format": "prettier -w .",
+        "typecheck": "tsc -p tsconfig.json"
+    }
+}
