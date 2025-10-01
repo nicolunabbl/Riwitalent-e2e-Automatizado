@@ -1,8 +1,3 @@
-import { test, expect } from "@playwright/test";
-import { LoginPage } from "../pages/login.page";
-import users from "../fixtures/users.json" with { type: "json" };
-import { resolveCreds } from "../utils/creds";
-
 /**
  * Tests de autenticación y login para diferentes roles de usuario
  * 
@@ -11,6 +6,13 @@ import { resolveCreds } from "../utils/creds";
  * @tags smoke, auth, i18n
  * @since 2025-09-30
  */
+
+import { test, expect } from "@playwright/test";
+import { LoginPage } from "../pages/login.page";
+import users from "../fixtures/users.json" with { type: "json" };
+import { resolveCreds } from "../utils/creds";
+
+
 test.describe("@smoke @auth", () => {
   for (const raw of users) {
     const u = resolveCreds(raw as any);

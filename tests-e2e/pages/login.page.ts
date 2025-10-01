@@ -1,10 +1,11 @@
-import { Page, expect, test } from "@playwright/test";
-
 /**
  * Página de Login
  * 
  * @author Nicolás Luna Romero
  */
+
+import { Page, expect, test } from "@playwright/test";
+
 
 export class LoginPage {
   constructor(private page: Page) {}
