@@ -25,12 +25,27 @@ links: ['https://example.com'],
 media: ['https://example.com/cv.pdf']
 });
 
+export const buildProcesoUI = () => {
+  const workModes     = ['Remoto', 'Hibrido', 'Presencial'];
+  const businessLines = ['Staffing', 'Contratacion Directa'];
+  const englishLevels = [
+    'A1 - Principiante',
+    'A2 - Elemental',
+    'B1 - Intermedio',
+    'B2 - Intermedio Alto',
+    'C1 - Avanzado',
+    'C2 - Competencia',
+    'Nativo - Hablante Nativo'
+  ];
+  const skillsPool = ['Playwright', 'REST', 'DotNet Core', 'PostgreSQL', 'RSpec', 'Delphi', 'Appium'];
 
-export const buildProceso = (companyId: number) => ({
-companyId,
-name: unique('Proceso'),
-description: 'Proceso auto e2e',
-vacancies: 1,
-typeContract: 'FULL_TIME',
-workMode: 'REMOTE'
-});
+  return {
+    name: unique('Proceso'),
+    description: `Proceso auto e2e ${Date.now()}`,
+    workMode: workModes[Math.floor(Math.random() * workModes.length)],
+    businessLine: businessLines[Math.floor(Math.random() * businessLines.length)],
+    vacancies: 1,
+    englishLevel: englishLevels[Math.floor(Math.random() * englishLevels.length)],
+    skills: [skillsPool[Math.floor(Math.random() * skillsPool.length)]]
+  };
+};
