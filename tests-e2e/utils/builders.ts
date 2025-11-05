@@ -44,7 +44,7 @@ export const buildProcesoUI = () => {
     description: `Proceso auto e2e ${Date.now()}`,
     workMode: workModes[Math.floor(Math.random() * workModes.length)],
     businessLine: businessLines[Math.floor(Math.random() * businessLines.length)],
-    vacancies: 1,
+    vacancies: Math.floor(Math.random() * 30) + 1,
     englishLevel: englishLevels[Math.floor(Math.random() * englishLevels.length)],
     skills: [skillsPool[Math.floor(Math.random() * skillsPool.length)]]
   };

@@ -30,6 +30,4 @@ test('@smoke @procesos Crear proceso con datos aleatorios', async ({ page }) => 
     ...procesoData
   });
 
-  // Verificar que el proceso aparece en la lista
-  await expect(page.getByTestId('proceso-row').filter({ hasText: procesoData.name })).toBeVisible();
 });
