@@ -8,9 +8,9 @@
  */
 
 import { test, expect } from "@playwright/test";
-import { LoginPage } from "../pages/login.page";
-import users from "../fixtures/users.json" with { type: "json" };
-import { resolveCreds } from "../utils/creds";
+import { LoginPage } from "../../pages/login/login.page";
+import users from "../../fixtures/users.json" with { type: "json" };
+import { resolveCreds } from "../../utils/creds";
 
 
 test.describe("@smoke @auth", () => {
