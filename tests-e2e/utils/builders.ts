@@ -34,8 +34,8 @@ export const buildProcesoUI = () => {
     'B1 - Intermedio',
     'B2 - Intermedio Alto',
     'C1 - Avanzado',
-    'C2 - Competencia',
-    'Nativo - Hablante Nativo'
+    'C2 - Maestría',
+    'Nativo'
   ];
   const skillsPool = ['Playwright', 'REST', 'DotNet Core', 'PostgreSQL', 'RSpec', 'Delphi', 'Appium'];
 
