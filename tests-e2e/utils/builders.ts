@@ -40,7 +40,7 @@ export const buildProcesoUI = () => {
   const skillsPool = ['Playwright', 'REST', 'DotNet Core', 'PostgreSQL', 'RSpec', 'Delphi', 'Appium'];
 
   return {
-    name: unique('Proceso'),
+    name: `Proceso-${Date.now()}-${Math.floor(Math.random()*1000)}`,
     description: `Proceso auto e2e ${Date.now()}`,
     workMode: workModes[Math.floor(Math.random() * workModes.length)],
     businessLine: businessLines[Math.floor(Math.random() * businessLines.length)],

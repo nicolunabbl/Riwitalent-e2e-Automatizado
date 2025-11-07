@@ -1,4 +1,4 @@
-import { Page } from '@playwright/test';
+import { Locator, Page } from '@playwright/test';
 import { Combobox } from '../components/combobox.component';
 import { Toast } from '../components/toast.component';
 
@@ -14,6 +14,12 @@ export class ProcesoCreateModal {
   vacInput    = this.page.getByRole('spinbutton', { name: 'Número de vacantes' });
   englishSel  = this.page.getByRole('combobox').filter({ hasText: 'Selecciona el nivel de ingles' });
   skillsTrigger = this.page.locator('button[data-slot="popover-trigger"]').filter({ hasText: /skill/i });
+
+    private async readComboValue(container: Locator) {
+    const input = container.locator('xpath=.//input[1]');
+    if (await input.count()) return await input.inputValue();
+    return (await container.innerText()).trim();
+  }
 
   async fillGeneral(data: {
     companyName: string; 

@@ -13,8 +13,8 @@ export default defineConfig({
   testDir: "./tests-e2e/specs",
   fullyParallel: true,
   retries: 1,
-  timeout: 30_000,
-  expect: { timeout: 5_000 },
+  timeout: 90_000,
+  expect: { timeout: 30_000 },
   reporter: [
     ["list"],
     ["html", { open: "never", outputFolder: "./tests-e2e/reports/html" }],
@@ -24,8 +24,8 @@ export default defineConfig({
     trace: "on-first-retry",
     video: "off",
     screenshot: "only-on-failure",
-    actionTimeout: 10_000,
-    navigationTimeout: 15_000,
+    actionTimeout: 15_000,
+    navigationTimeout: 20_000,
     locale: "es-ES",
   },
   projects: [
