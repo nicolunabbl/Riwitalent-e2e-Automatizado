@@ -1,127 +1,122 @@
-/**
+﻿/**
  * Página de Login
- * 
+ *
  * @author Nicolás Luna Romero
  */
 
 import { Page, expect, test } from "@playwright/test";
-
-
 export class LoginPage {
   constructor(private page: Page) {}
-  // Locators que funcionan en múltiples idiomas
-  email = this.page.getByRole("textbox", {
-    name: /correo electrónico|email|e-mail/i,
-  });
-  pass = this.page.getByRole("textbox", { name: /contraseña|password/i });
-  submit = this.page.getByRole("button", { name: /^(continuar|continue)$/i });
 
-  // Locators para el cambio de idioma
-  languageCombobox = this.page.getByRole("combobox");
-  spanishFlag = this.page.getByRole("img", { name: "es" });
-  spanishOption = this.page
-    .locator("div")
-    .filter({ hasText: /^(Spanish|Español)$/ });
-  englishOption = this.page
-    .locator("div")
-    .filter({ hasText: /^(English|Inglés)$/ });
+  // Contenedores principales
+  card = this.page.getByTestId("login-card-container");
+  form = this.page.getByTestId("login-form");
+
+  // Campos del formulario
+  email = this.page.getByTestId("login-input-email");
+  password = this.page.getByTestId("login-input-password");
+  submit = this.page.getByTestId("login-button-submit");
+  passwordToggle = this.page.getByTestId(
+    "login-button-toggle-password-visibility"
+  );
+
+  // Feedback
+  errorAlert = this.page.getByTestId("login-alert-error");
+
+  // Selector de idioma
+  languageButton = this.page.getByTestId("select-language-button");
+  englishOption = this.page.getByTestId("select-language-option-en");
+
+  // Modal de términos
+  termsOverlay = this.page.getByTestId("login-modal-terms-overlay");
+  termsModal = this.page.getByTestId("login-modal-terms");
+  termsCloseButton = this.page.getByTestId("login-button-close-terms-modal");
+  termsViewLink = this.page.getByTestId("login-link-view-terms");
+  termsCancelButton = this.page.getByTestId("login-button-cancel-terms");
+  termsAcceptButton = this.page.getByTestId("login-button-accept-terms");
 
   async goto() {
     await test.step("Navegar a la página de login", async () => {
       await this.page.goto("/es/login");
+      await expect(this.card).toBeVisible();
+      await expect(this.form).toBeVisible();
       await expect(this.email).toBeVisible();
     });
   }
 
   async changeLanguageToEnglish() {
     await test.step("Cambiar idioma de español a inglés", async () => {
-      await test.step("Hacer clic en el selector de idioma", async () => {
-        await this.languageCombobox.click();
+      await test.step("Abrir selector de idioma", async () => {
+        await this.languageButton.click();
       });
 
       await test.step("Seleccionar inglés", async () => {
         await this.englishOption.click();
       });
 
-      await test.step("Esperar a que la página se recargue en inglés", async () => {
+      await test.step("Esperar recarga en inglés", async () => {
         await this.page.waitForURL("**/en/login");
-        // Esperar a que los elementos se recarguen con el nuevo idioma
-        await this.page.waitForTimeout(1000);
+        await expect(this.form).toBeVisible();
       });
     });
   }
 
-  // Método para obtener locators dinámicos según el idioma detectado
-  private async getEmailField() {
-    // Intentar encontrar el campo por diferentes nombres
-    const possibleSelectors = [
-      this.page.getByRole("textbox", { name: /correo electrónico/i }),
-      this.page.getByRole("textbox", { name: /email/i }),
-      this.page.getByRole("textbox", { name: /e-mail/i }),
-      this.page.getByPlaceholder(/correo|email/i),
-      this.page.locator('input[type="email"]').first(),
-    ];
-
-    for (const selector of possibleSelectors) {
-      if (await selector.isVisible()) {
-        return selector;
-      }
-    }
-    return this.email; // fallback
+  async login(email: string, password: string) {
+    await test.step(`Iniciar sesión con usuario: ${email}`, async () => {
+      await this.email.fill(email);
+      await this.password.fill(password);
+      await this.submit.click();
+    });
   }
 
-  private async getPasswordField() {
-    const possibleSelectors = [
-      this.page.getByRole("textbox", { name: /contraseña/i }),
-      this.page.getByRole("textbox", { name: /password/i }),
-      this.page.getByPlaceholder(/contraseña|password/i),
-      this.page.locator('input[type="password"]').first(),
-    ];
-
-    for (const selector of possibleSelectors) {
-      if (await selector.isVisible()) {
-        return selector;
-      }
-    }
-    return this.pass; // fallback
+  async togglePasswordVisibility() {
+    await test.step("Mostrar/Ocultar contraseña", async () => {
+      await this.passwordToggle.click();
+    });
   }
 
-  private async getSubmitButton() {
-    // Intentar encontrar el botón principal de submit, excluyendo botones de SSO
-    const possibleSelectors = [
-      this.page.getByRole("button", { name: /^continuar$/i }),
-      this.page.getByRole("button", { name: /^continue$/i }),
-      this.page
-        .locator('button[type="submit"]')
-        .filter({ hasNotText: /microsoft|google|facebook|sso/i })
-        .first(),
-      this.page.locator('form button[type="submit"]').first(),
-    ];
-
-    for (const selector of possibleSelectors) {
-      if (await selector.isVisible()) {
-        return selector;
-      }
-    }
-    return this.submit; // fallback
+  async waitForTermsModal() {
+    await test.step("Esperar modal de términos", async () => {
+      await expect(this.termsOverlay).toBeVisible();
+      await expect(this.termsModal).toBeVisible();
+    });
   }
 
-  async login(e: string, p: string) {
-    await test.step(`Iniciar sesión con usuario: ${e}`, async () => {
-      await test.step("Ingresar correo electrónico", async () => {
-        const emailField = await this.getEmailField();
-        await emailField.fill(e);
-      });
+  async acceptTerms() {
+    await test.step("Aceptar términos", async () => {
+      await this.waitForTermsModal();
+      await this.termsAcceptButton.click();
+      await expect(this.termsModal).toBeHidden();
+    });
+  }
 
-      await test.step("Ingresar contraseña", async () => {
-        const passwordField = await this.getPasswordField();
-        await passwordField.fill(p);
-      });
+  async cancelTermsModal() {
+    await test.step("Cancelar modal de términos", async () => {
+      await this.waitForTermsModal();
+      await this.termsCancelButton.click();
+      await expect(this.termsModal).toBeHidden();
+    });
+  }
 
-      await test.step("Hacer clic en el botón Continuar", async () => {
-        const submitButton = await this.getSubmitButton();
-        await submitButton.click();
-      });
+  async closeTermsModal() {
+    await test.step("Cerrar modal de términos", async () => {
+      await this.waitForTermsModal();
+      await this.termsCloseButton.click();
+      await expect(this.termsModal).toBeHidden();
+    });
+  }
+
+  async openTermsLink() {
+    await test.step("Abrir enlace de términos", async () => {
+      await this.waitForTermsModal();
+      await this.termsViewLink.click();
+    });
+  }
+
+  async expectErrorMessage(message: string | RegExp) {
+    await test.step("Validar mensaje de error en login", async () => {
+      await expect(this.errorAlert).toBeVisible();
+      await expect(this.errorAlert).toContainText(message);
     });
   }
 }
