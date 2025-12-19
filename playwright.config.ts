@@ -5,7 +5,6 @@ const ENV = process.env.ENV || "qa";
 const baseURLs: Record<string, string> = {
   dev: "https://dev.talent.riwi.io",
   qa: "https://qa.talent.riwi.io",
-  // staging: 'https://staging.talent.riwi.io',
   // prod: 'https://talent.riwi.io',
 };
 
@@ -27,6 +26,7 @@ export default defineConfig({
     actionTimeout: 10_000,
     navigationTimeout: 15_000,
     locale: "es-ES",
+    testIdAttribute: "data-test-id",
   },
   projects: [
     { name: "chromium", use: { ...devices["Desktop Chrome"] } },
