@@ -33,14 +33,14 @@ test.describe("@smoke @auth", () => {
           await test.step("Verificar redirección a página de métricas (admin)", async () => {
             await page.waitForURL("**/metrics");
             await expect(
-              page.locator('h1, [data-testid*="metrics"], main')
+              page.locator('h1:has-text("Panel de Métricas")')
             ).toBeVisible();
           });
         } else if (u.role === "comercial") {
           await test.step("Verificar redirección a página de solicitudes (comercial)", async () => {
             await page.waitForURL("**/requests");
             await expect(
-              page.locator('h1, [data-testid*="requests"], main')
+              page.locator('h1:has-text("Solicitudes")')
             ).toBeVisible();
           });
         }
@@ -75,14 +75,14 @@ test.describe("@smoke @auth @i18n", () => {
           await test.step("Verificar redirección a página de métricas (admin)", async () => {
             await page.waitForURL("**/metrics");
             await expect(
-              page.locator('h1, [data-testid*="metrics"], main')
+              page.locator('h1:has-text("Metrics")')
             ).toBeVisible();
           });
         } else if (u.role === "comercial") {
           await test.step("Verificar redirección a página de solicitudes (comercial)", async () => {
             await page.waitForURL("**/requests");
             await expect(
-              page.locator('h1, [data-testid*="requests"], main')
+              page.locator('h1:has-text("Requests")')
             ).toBeVisible();
           });
         }
