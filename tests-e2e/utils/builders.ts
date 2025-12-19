@@ -26,26 +26,40 @@ media: ['https://example.com/cv.pdf']
 });
 
 export const buildProcesoUI = () => {
-  const workModes     = ['Remoto', 'Hibrido', 'Presencial'];
-  const businessLines = ['Staffing', 'Contratacion Directa'];
+  const workModes = [
+    { label: 'Remoto', id: '1' },
+    { label: 'Hibrido', id: '2' },
+    { label: 'Presencial', id: '3' },
+  ];
+  const businessLines = [
+    { label: 'Staffing', id: 'Staff' },
+    { label: 'Contratacion Directa', id: 'Direct hiring' },
+  ];
   const englishLevels = [
-    'A1 - Principiante',
-    'A2 - Elemental',
-    'B1 - Intermedio',
-    'B2 - Intermedio Alto',
-    'C1 - Avanzado',
-    'C2 - Maestría',
-    'Nativo'
+    { label: 'A1 - Principiante', code: 'A1' },
+    { label: 'A2 - Elemental', code: 'A2' },
+    { label: 'B1 - Intermedio', code: 'B1' },
+    { label: 'B2 - Intermedio Alto', code: 'B2' },
+    { label: 'C1 - Avanzado', code: 'C1' },
+    { label: 'C2 - Maestría', code: 'C2' },
+    { label: 'Nativo', code: 'Native' },
   ];
   const skillsPool = ['Playwright', 'REST', 'DotNet Core', 'PostgreSQL', 'RSpec', 'Delphi', 'Appium'];
+
+  const workMode = workModes[Math.floor(Math.random() * workModes.length)];
+  const businessLine = businessLines[Math.floor(Math.random() * businessLines.length)];
+  const englishLevel = englishLevels[Math.floor(Math.random() * englishLevels.length)];
 
   return {
     name: unique('Proceso'),
     description: `Proceso auto e2e ${Date.now()}`,
-    workMode: workModes[Math.floor(Math.random() * workModes.length)],
-    businessLine: businessLines[Math.floor(Math.random() * businessLines.length)],
+    workMode: workMode.label,
+    workModeId: workMode.id,
+    businessLine: businessLine.label,
+    businessLineId: businessLine.id,
     vacancies: Math.floor(Math.random() * 30) + 1,
-    englishLevel: englishLevels[Math.floor(Math.random() * englishLevels.length)],
+    englishLevel: englishLevel.label,
+    englishCode: englishLevel.code,
     skills: [skillsPool[Math.floor(Math.random() * skillsPool.length)]]
   };
 };
