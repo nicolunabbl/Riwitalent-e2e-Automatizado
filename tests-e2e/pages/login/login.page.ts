@@ -16,9 +16,7 @@ export class LoginPage {
   email = this.page.getByTestId("login-input-email");
   password = this.page.getByTestId("login-input-password");
   submit = this.page.getByTestId("login-button-submit");
-  passwordToggle = this.page.getByTestId(
-    "login-button-toggle-password-visibility"
-  );
+  passwordToggle = this.page.getByTestId("login-button-toggle-password-visibility");
 
   // Feedback
   errorAlert = this.page.getByTestId("login-alert-error");
