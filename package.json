@@ -4,6 +4,7 @@
     "private": true,
     "type": "module",
     "devDependencies": {
+        "@faker-js/faker": "^10.2.0",
         "@playwright/test": "^1.55.1",
         "@types/node": "^24.6.0",
         "dotenv": "^16.4.5",
@@ -19,5 +20,8 @@
         "e2e:report": "playwright show-report tests-e2e/reports/html",
         "format": "prettier -w .",
         "typecheck": "tsc -p tsconfig.json"
+    },
+    "dependencies": {
+        "playwright": "^1.57.0"
     }
 }

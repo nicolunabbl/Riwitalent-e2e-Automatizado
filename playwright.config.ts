@@ -21,8 +21,8 @@ export default defineConfig({
   use: {
     baseURL: baseURLs[ENV],
     trace: "on-first-retry",
-    video: "off",
-    screenshot: "only-on-failure",
+    video: "on",
+    screenshot: "on",
     actionTimeout: 10_000,
     navigationTimeout: 15_000,
     locale: "es-ES",

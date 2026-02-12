@@ -25,7 +25,7 @@ export class ProcesoCreateModal {
     this.page.getByTestId(`create-process-work-mode-option-${value}`);
 
   hiringTrigger = this.page.getByTestId('create-process-hiring-type-select');
-  hiringOption = (value: string) =>
+  hiringOption = (value: string) => 
     this.page.getByTestId(`create-process-hiring-type-option-${value}`);
 
   vacanciesInput = this.page.getByTestId('create-process-vacancies-input');

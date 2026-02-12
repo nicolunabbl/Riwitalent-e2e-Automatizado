@@ -1,11 +1,18 @@
 # RiwiTalent E2E (Playwright + TypeScript)
 Framework de pruebas E2E con POM + DDT y seeding por API.
 
+# Flujo normal para crear un test
+
+- https://mermaid.live/edit#pako:eNqtk9tu2kAQhl9ltNdgMEfji1bhlEClJFKiXtRwsdgDLDW71h4SCOKRctUHqNS8WMcHUh6ge7Uj_d_8_87YJxarBFnINppnW3geLyTQuYlmUsRChTDGtZBCw4gbBQnCo3a44kuo17_A8PTn9-QgjEUJqTLwyDcID6sdxtZ8PZedhqSEe1XoR9FII9fXOiC0kVFtGhArCRu0w-MzGjtLllcNnj7eiw5jcrzHGI2wCsbckulnpovjqFSWxfiankQ3sXU8FW8UorEWB-s0GTuD2ng7Q_YK4iKhdPiiYP70cL-86lM9Y5o_24CTkGlFWQhS-yzFnWpozNAKK17UJc2kRMpiep3mtprG0Bkh0RiYpuq1mMeaLqaxvGIq57sK4Trekgd4JsPYs6ag8vsndVvqy-KuKGbRxMRarGiZ6cevjYh5PrusmB04w2WiwNLkPdpnVrWZFeQ8mtCunCVn2lEIMjtAlvLjqxabrS0g0jlRQfMC-hZNBWnzXcJ3mnnCE7WE_35YjT5dkbDQ0kNqbI96z_OSnfIwC2a3uMcFC-macP1zwRbyTEzG5Q-l9hdMK7fZsnDNU0OVyxJucSw4_RT_JCgT1CPlpGWh32wNiiYsPLEDC3tt3_Pb7UGz12r1B0FQY0cW1rtNrxN0ekHgd1o93-_0u-caeytsm14QNLudVrdPaLvpB8H5L7GSDNY
+
+
+
 
 ## Requisitos
 - Node 18+
 
 
 ## Instalación
-```bash
+   ```bash
 npm i
+
