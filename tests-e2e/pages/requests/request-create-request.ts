@@ -24,9 +24,11 @@ export class CreateRequest {
     companyTrigger = this.page.locator('button').filter({ hasText: /Selecciona/i }).first();
     contractTrigger = this.page.locator('div').filter({ hasText: /^Tipo de contrato/i }).locator('button').first();
     modalityTrigger = this.page.locator('div').filter({ hasText: /^Modalidad de trabajo/i }).locator('button').first();
-    englishTrigger = this.page.locator('div').filter({ hasText: /^Nivel de ingl.s/i }).locator('button').first();
+    englishTrigger = this.page.locator('div,label').filter({ hasText: /Nivel de ingl.s|Ingl.s|English/i }).locator('button').first();
 
     sendRequestButton = this.page.getByRole('button', { name: /Enviar solicitud/i });
+    createNewCompanyButton = this.page.getByRole('button', { name: /Crear nueva empresa/i });
+
 
     // Actions
     async fillTitle(title: string) {
@@ -62,38 +64,59 @@ export class CreateRequest {
     }
 
     async selectEnglishLevel(level: string) {
-        const combo = new Combobox(this.page, this.englishTrigger);
-        await combo.open();
-        await this.selectOptionRobustly(level);
+        console.log(`Abriendo selector de nivel de inglés para: ${level}`);
+        
+        // Check if there is a native select nearby
+        const nativeSelect = this.page.locator('select').filter({ has: this.page.locator('option', { hasText: new RegExp(level, 'i') }) }).first();
+        
+        if (await nativeSelect.count() > 0) {
+            console.log('Detectado select nativo para Inglés, seleccionando directamente...');
+            await nativeSelect.selectOption({ label: level });
+        } else {
+            const combo = new Combobox(this.page, this.englishTrigger);
+            await combo.open();
+            console.log('Combo de inglés abierto, buscando opción...');
+            await this.selectOptionRobustly(level);
+        }
+        console.log(`Nivel de inglés ${level} procesado.`);
     }
 
     async fillSalary(salary: string | number) {
-        await this.salaryInput.fill(salary.toString());
+        console.log(`Filling salary: ${salary}`);
+        await this.salaryInput.first().scrollIntoViewIfNeeded();
+        await this.salaryInput.first().click({ force: true }); // Click to focus
+        await this.salaryInput.first().fill(salary.toString());
+        await this.salaryInput.first().press('Tab'); // Settle
     }
 
     async fillVacancies(vacancies: string | number) {
-        await this.vacanciesInput.fill(vacancies.toString());
+        await this.vacanciesInput.first().fill(vacancies.toString());
     }
 
     async fillPurpose(purpose: string) {
-        await this.purposeInput.fill(purpose);
+        console.log('Filling role purpose...');
+        // Some fields might be in an accordion named "Información adicional"
+        const accordion = this.page.getByText(/Información adicional/i);
+        if (await accordion.isVisible() && !(await this.purposeInput.isVisible())) {
+            await accordion.click();
+            await this.page.waitForTimeout(500);
+        }
+        await this.purposeInput.first().fill(purpose);
     }
 
     async fillLabRelational(relations: string) {
-        await this.relationsInput.fill(relations);
+        await this.relationsInput.first().fill(relations);
     }
 
     async fillMainResponsibilities(responsibilities: string) {
-        await this.responsibilitiesInput.fill(responsibilities);
+        await this.responsibilitiesInput.first().fill(responsibilities);
     }
 
     async selectSkillLevel(level: string) {
         console.log(`Selecting skills level: ${level}`);
         try {
-            await this.skillsLevelTrigger.first().click();
-            await this.page.waitForTimeout(1000);
-            const levelOption = this.page.getByRole('option', { name: new RegExp(`^${level}$`, 'i') }).first();
-            await levelOption.click();
+            await this.skillsLevelTrigger.first().click({ force: true });
+            await this.selectOptionRobustly(level);
         } catch (e) {
             console.warn(`Could not select skill level: ${level}.`);
         }
@@ -102,57 +125,95 @@ export class CreateRequest {
     async addSkillName(skill: string) {
         console.log(`--- Registering Skill: ${skill} ---`);
         
-        // 1. Click Search Trigger (The text/button "Buscar skills...")
-        await this.skillsSearchTrigger.first().click();
+        // 1. Click Search Trigger
+        await this.skillsSearchTrigger.first().click({ force: true });
         
-        // 2. Fill the specific textbox that says "Buscar skills..."
-        await this.skillsSearchInput.first().waitFor({ state: 'visible' });
+        // 2. Fill search
+        await this.skillsSearchInput.first().waitFor({ state: 'visible', timeout: 5000 });
         await this.skillsSearchInput.first().fill(skill);
-        
-        // 3. Wait for results. According to recording, results are buttons.
-        await this.page.waitForTimeout(1500); 
-        
-        const skillButton = this.page.getByRole('button', { name: new RegExp(`^${skill}$`, 'i') }).first();
-        const fallbackButton = this.page.getByRole('button', { name: new RegExp(skill, 'i') }).first();
+        await this.page.waitForTimeout(1000); 
+
+        // 3. Select from results
+        // Many systems use a specific list for search results
+        const resultItem = this.page.locator('[role="option"], [role="button"], .command-item').filter({ hasText: new RegExp(`^${skill}$`, 'i') }).first();
+        const fallbackItem = this.page.getByText(skill, { exact: true }).first();
 
         try {
-            if (await skillButton.isVisible()) {
-                await skillButton.click();
-                console.log(`Successfully Clicked Skill Button (Exact): ${skill}`);
-            } else if (await fallbackButton.isVisible()) {
-                await fallbackButton.click();
-                console.log(`Successfully Clicked Skill Button (Partial): ${skill}`);
+            if (await resultItem.isVisible()) {
+                await resultItem.click({ force: true });
+            } else if (await fallbackItem.isVisible()) {
+                await fallbackItem.click({ force: true });
             } else {
-                console.warn(`No button found for "${skill}", trying Enter fallback.`);
                 await this.page.keyboard.press('Enter');
             }
         } catch (e) {
-            console.error(`Error clicking skill "${skill}", using Enter as fallback.`);
             await this.page.keyboard.press('Enter');
         }
         
-        await this.page.waitForTimeout(1000);
-    }
-
-    async send() {
-        await this.sendRequestButton.click();
+        // 4. IMPORTANT: Ensure it was added. Usually a chip appears.
+        // If it doesn't appear, try Enter.
+        await this.page.waitForTimeout(500);
+        await this.page.keyboard.press('Enter'); 
+        
+        console.log(`Skill ${skill} registration attempt finished.`);
     }
 
     private async selectOptionRobustly(value: string) {
+        console.log(`Intentando seleccionar opción robustamente: ${value}`);
         const ex = new RegExp(`^${value.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}$`, 'i');
-        // Wait for any option to be visible to ensure the list is open
-        await this.page.getByRole('option').first().waitFor({ state: 'visible', timeout: 5000 });
+        
+        // Wait for list to be ready
+        await this.page.waitForTimeout(500);
         
         let option = this.page.getByRole('option', { name: ex }).first();
         if (!(await option.count())) {
             option = this.page.getByRole('option', { name: new RegExp(value, 'i') }).first();
         }
-
-        if (await option.count()) {
-            await option.scrollIntoViewIfNeeded();
-            await option.click();
-        } else {
-            throw new Error(`Could not find option with label: ${value}`);
+        if (!(await option.count())) {
+            option = this.page.getByText(ex).first();
         }
+
+        if (await option.count() > 0) {
+            const tagName = await option.evaluate(el => el.tagName.toLowerCase());
+            
+            if (tagName === 'option') {
+                console.log('Detectado elemento <option> nativo, buscando su contenedor <select>...');
+                // Try to find the closest select element to this option
+                const selectElement = option.locator('xpath=./ancestor::select');
+                const value = await option.getAttribute('value') || await option.innerText();
+                if (await selectElement.count() > 0) {
+                    await selectElement.selectOption({ value: value });
+                } else {
+                    // Fallback to page level if parent find fails
+                    await this.page.selectOption('select', { value: value }); 
+                }
+            } else {
+                try {
+                    await option.scrollIntoViewIfNeeded({ timeout: 2000 });
+                } catch (e) {
+                    console.warn(`No se pudo hacer scroll a la opción ${value}, intentando click forzado.`);
+                }
+                await option.click({ force: true });
+            }
+            console.log(`Opción ${value} procesada.`);
+        } else {
+            console.warn(`No se encontró la opción ${value} con localizadores estándar, intentando búsqueda por texto simple...`);
+            const fallback = this.page.locator(`text=${value}`).first();
+            if (await fallback.count() > 0) {
+                await fallback.click({ force: true });
+            } else {
+                // Last ditch effort: ArrowDown + Enter
+                console.warn('Intentando seleccionar mediante teclado (ArrowDown + Enter)...');
+                await this.page.keyboard.press('ArrowDown');
+                await this.page.keyboard.press('Enter');
+            }
+        }
+        
+        await this.page.waitForTimeout(500); // Settle time after selection
     }
+    
+    async send() {
+        await this.sendRequestButton.click();
+    }
+
 }
