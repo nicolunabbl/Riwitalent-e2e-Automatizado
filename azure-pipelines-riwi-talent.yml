@@ -1,0 +1,48 @@
+trigger:
+  branches:
+    include:
+      - qa    # Se ejecuta cuando hay commits en la rama QA
+  paths:
+    include:
+      - RiwiTalent/**
+      - common/**
+      - package.json
+      - playwright.config.ts
+
+# Trigger para Pull Requests hacia QA (Opcional, para validar antes de mergear)
+pr:
+  branches:
+    include:
+      - qa
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs:
+- job: Test
+  displayName: 'Run RiwiTalent Tests'
+  steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '18.x'
+    displayName: 'Install Node.js'
+
+  - script: |
+      npm ci
+      npx playwright install --with-deps
+    displayName: 'Install Dependencies'
+
+  # Ejecuta TODOS los tests del proyecto RiwiTalent
+  # Si quieres filtrar por tag, usa: npx playwright test --project=RiwiTalent --grep @smoke
+  - script: npx playwright test --project=RiwiTalent
+    displayName: 'Run Playwright Tests'
+    env:
+      CI: 'true'
+
+  # condition: succeededOrFailed() asegura que se publique el reporte aunque fallen los tests
+  - task: PublishPipelineArtifact@1
+    condition: succeededOrFailed() 
+    inputs:
+      targetPath: 'reports/html'
+      artifact: 'playwright-report'
+      publishLocation: 'pipeline'
