@@ -34,7 +34,7 @@ test('Debe de crear una solicitud con el nombre del cargo aleatorio y campos com
             { name: 'SQL', level: 'Intermedio' },
             { name: 'Docker', level: 'Avanzado' }
         ], { min: 2, max: 3 })
-    };
+    }; 
 
     const login = new LoginPage(page);       
     await login.goto();
