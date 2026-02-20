@@ -9,14 +9,14 @@ const baseURLs: Record<string, string> = {
 };
 
 export default defineConfig({
-  testDir: "./tests-e2e/specs",
+
   fullyParallel: true,
   retries: 1,
   timeout: 30_000,
   expect: { timeout: 5_000 },
   reporter: [
     ["list"],
-    ["html", { open: "never", outputFolder: "./tests-e2e/reports/html" }],
+    ["html", { open: "never", outputFolder: "./reports/html" }],
   ],
   use: {
     baseURL: baseURLs[ENV],
@@ -29,10 +29,29 @@ export default defineConfig({
     testIdAttribute: "data-test-id",
   },
   projects: [
-    { name: "chromium", use: { ...devices["Desktop Chrome"] } },
-    // { name: 'chrome', use: { channel: 'chrome' } },
-    // { name: 'firefox', use: { ...devices['Desktop Firefox'] } },
-    // { name: 'msedge', use: { channel: 'msedge' } }
-    // Brave opcional: usar channel/executablePath si se requiere
+    {
+      name: 'RiwiTalent',
+      testDir: './RiwiTalent/specs',
+      use: {
+        baseURL: baseURLs.qa,
+        ...devices['Desktop Chrome'],
+      },
+    },
+    {
+      name: 'RiwiJoin',
+      testDir: './RiwiJoin/specs',
+      use: {
+        baseURL: 'https://qa.join.riwi.io',
+        ...devices['Desktop Chrome'],
+      },
+    },
+    {
+      name: 'RiwiMind',
+      testDir: './RiwiMind/specs',
+      use: {
+        baseURL: 'https://qa.mind.riwi.io',
+        ...devices['Desktop Chrome'],
+      },
+    },
   ],
 });
