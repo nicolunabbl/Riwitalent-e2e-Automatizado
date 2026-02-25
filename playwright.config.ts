@@ -41,8 +41,24 @@ export default defineConfig({
       name: 'RiwiJoin',
       testDir: './RiwiJoin/specs',
       use: {
-        baseURL: 'https://qa.join.riwi.io',
+        baseURL: 'https://join.riwi.io/register',
         ...devices['Desktop Chrome'],
+        launchOptions: { slowMo: 800 },
+      },
+    },
+    {
+      name: 'RiwiJoin-Performance',
+      testDir: './RiwiJoin/specs',
+      testMatch: '**/PruebaRendimiento150.spec.ts',
+      retries: 0,
+      workers: 60,
+      timeout: 60_000,
+      use: {
+        baseURL: 'https://join.riwi.io',
+        ...devices['Desktop Chrome'],
+        headless: true,
+        video: 'off',
+        screenshot: 'only-on-failure',
       },
     },
     {

@@ -1,0 +1,1364 @@
+{
+  "usuarios": [
+    {
+      "pagina1_datos": {
+        "nombre": "Juan",
+        "apellido": "Gómez",
+        "correo_electronico": "juan.gomez01@example.com",
+        "usuario_discord": "juan824#2456",
+        "contrasena": "Riwi01A!z45",
+        "telefono": "3159027481",
+        "fecha_nacimiento": "14/08/2002",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1000111111",
+        "genero": "Masculino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Medellín",
+        "sede_interes": "Medellín",
+        "estrato": "3",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Tecnólogo",
+        "titulo": "Tecnólogo en Desarrollo de Software",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "María",
+        "apellido": "Rodríguez",
+        "correo_electronico": "maria.rodriguez02@example.com",
+        "usuario_discord": "maria391#7812",
+        "contrasena": "Riwi02A@z62",
+        "telefono": "3007481952",
+        "fecha_nacimiento": "03/11/2000",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1000222222",
+        "genero": "Femenino",
+        "tipo_convenio": "Medellín Joven"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Bello",
+        "sede_interes": "Medellín",
+        "estrato": "2",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Profesional",
+        "titulo": "Ingeniería de Sistemas",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Andrés",
+        "apellido": "Restrepo",
+        "correo_electronico": "andres.restrepo03@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi03A&z71",
+        "telefono": "3216049387",
+        "fecha_nacimiento": "22/04/1998",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1000333333",
+        "genero": "Masculino",
+        "tipo_convenio": "Crack the Code"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Envigado",
+        "sede_interes": "Medellín",
+        "estrato": "4",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Técnico",
+        "titulo": "Técnico en Programación",
+        "conocimientos_programacion": "Básico",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Valentina",
+        "apellido": "Ospina",
+        "correo_electronico": "valentina.ospina04@example.com",
+        "usuario_discord": "valentina120#3098",
+        "contrasena": "Riwi04A$z38",
+        "telefono": "3148876501",
+        "fecha_nacimiento": "09/02/2004",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1000444444",
+        "genero": "Femenino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Itagüí",
+        "sede_interes": "Medellín",
+        "estrato": "3",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Bachiller",
+        "titulo": "Bachiller Académico",
+        "conocimientos_programacion": "Básico",
+        "ocupacion": "Estudiante",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Camilo",
+        "apellido": "Cárdenas",
+        "correo_electronico": "camilo.cardenas05@example.com",
+        "usuario_discord": "camilo777#4421",
+        "contrasena": "Riwi05A%z90",
+        "telefono": "3015609824",
+        "fecha_nacimiento": "17/06/1997",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1000555555",
+        "genero": "Masculino",
+        "tipo_convenio": "Medellín Joven"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Sabaneta",
+        "sede_interes": "Medellín",
+        "estrato": "2",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Llamada telefónica"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Profesional",
+        "titulo": "Ingeniería de Software",
+        "conocimientos_programacion": "Avanzado",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Sofía",
+        "apellido": "Álvarez",
+        "correo_electronico": "sofia.alvarez06@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi06A!z27",
+        "telefono": "3201746935",
+        "fecha_nacimiento": "28/10/2003",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1000666666",
+        "genero": "Femenino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Rionegro",
+        "sede_interes": "Medellín",
+        "estrato": "4",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Tecnólogo",
+        "titulo": "Tecnólogo en Análisis de Datos",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Estudiante",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Daniel",
+        "apellido": "Quintero",
+        "correo_electronico": "daniel.quintero07@example.com",
+        "usuario_discord": "daniel55#9901",
+        "contrasena": "Riwi07A@z84",
+        "telefono": "3129045617",
+        "fecha_nacimiento": "06/01/1999",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1000777777",
+        "genero": "Masculino",
+        "tipo_convenio": "Crack the Code"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "La Estrella",
+        "sede_interes": "Medellín",
+        "estrato": "3",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Técnico",
+        "titulo": "Técnico en Sistemas",
+        "conocimientos_programacion": "Básico",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Laura",
+        "apellido": "Patiño",
+        "correo_electronico": "laura.patino08@example.com",
+        "usuario_discord": "laura900#1204",
+        "contrasena": "Riwi08A&z53",
+        "telefono": "3167082459",
+        "fecha_nacimiento": "12/09/2001",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1000888888",
+        "genero": "Femenino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Copacabana",
+        "sede_interes": "Medellín",
+        "estrato": "1",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Bachiller",
+        "titulo": "Bachiller Técnico",
+        "conocimientos_programacion": "Ninguno",
+        "ocupacion": "Estudiante",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Sebastián",
+        "apellido": "Arboleda",
+        "correo_electronico": "sebastian.arboleda09@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi09A$z66",
+        "telefono": "3105527846",
+        "fecha_nacimiento": "19/07/2009",
+        "tipo_documento": "Tarjeta de identidad",
+        "numero_documento": "1050999999",
+        "genero": "Masculino",
+        "tipo_convenio": "Medellín Joven"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Girardota",
+        "sede_interes": "Medellín",
+        "estrato": "2",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Llamada telefónica"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Bachiller",
+        "titulo": "",
+        "conocimientos_programacion": "Básico",
+        "ocupacion": "Estudiante",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Natalia",
+        "apellido": "Zapata",
+        "correo_electronico": "natalia.zapata10@example.com",
+        "usuario_discord": "natalia40#7710",
+        "contrasena": "Riwi10A!z19",
+        "telefono": "3198064257",
+        "fecha_nacimiento": "04/12/2008",
+        "tipo_documento": "Tarjeta de identidad",
+        "numero_documento": "1051111110",
+        "genero": "Femenino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Caldas",
+        "sede_interes": "Medellín",
+        "estrato": "3",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Bachiller",
+        "titulo": "Bachiller Académico",
+        "conocimientos_programacion": "Ninguno",
+        "ocupacion": "Estudiante",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Carlos",
+        "apellido": "Vargas",
+        "correo_electronico": "carlos.vargas11@example.com",
+        "usuario_discord": "carlos612#5002",
+        "contrasena": "Riwi11A@z73",
+        "telefono": "3009156734",
+        "fecha_nacimiento": "21/03/1996",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1001222221",
+        "genero": "Masculino",
+        "tipo_convenio": "Crack the Code"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Atlántico",
+        "municipio": "Barranquilla",
+        "sede_interes": "Barranquilla",
+        "estrato": "4",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Profesional",
+        "titulo": "Ingeniería Industrial",
+        "conocimientos_programacion": "Básico",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Daniela",
+        "apellido": "Torres",
+        "correo_electronico": "daniela.torres12@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi12A&z58",
+        "telefono": "3047812096",
+        "fecha_nacimiento": "08/05/2002",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1001333332",
+        "genero": "Femenino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Atlántico",
+        "municipio": "Soledad",
+        "sede_interes": "Barranquilla",
+        "estrato": "2",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Tecnólogo",
+        "titulo": "Tecnólogo en Gestión Empresarial",
+        "conocimientos_programacion": "Básico",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Felipe",
+        "apellido": "Suárez",
+        "correo_electronico": "felipe.suarez13@example.com",
+        "usuario_discord": "felipe903#6631",
+        "contrasena": "Riwi13A!z41",
+        "telefono": "3134098762",
+        "fecha_nacimiento": "30/09/1999",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1001444443",
+        "genero": "Masculino",
+        "tipo_convenio": "Medellín Joven"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Atlántico",
+        "municipio": "Malambo",
+        "sede_interes": "Barranquilla",
+        "estrato": "3",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "Llamada telefónica"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Técnico",
+        "titulo": "Técnico en Redes",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Paula",
+        "apellido": "Herrera",
+        "correo_electronico": "paula.herrera14@example.com",
+        "usuario_discord": "paula112#8840",
+        "contrasena": "Riwi14A@z95",
+        "telefono": "3206659013",
+        "fecha_nacimiento": "15/01/2001",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1001555554",
+        "genero": "Femenino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Atlántico",
+        "municipio": "Puerto Colombia",
+        "sede_interes": "Barranquilla",
+        "estrato": "5",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Profesional",
+        "titulo": "Administración de Empresas",
+        "conocimientos_programacion": "Básico",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Julián",
+        "apellido": "Rojas",
+        "correo_electronico": "julian.rojas15@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi15A&z33",
+        "telefono": "3112987450",
+        "fecha_nacimiento": "26/06/2004",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1001666665",
+        "genero": "Masculino",
+        "tipo_convenio": "Crack the Code"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Atlántico",
+        "municipio": "Galapa",
+        "sede_interes": "Barranquilla",
+        "estrato": "2",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Bachiller",
+        "titulo": "Bachiller Académico",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Estudiante",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Sara",
+        "apellido": "Mendoza",
+        "correo_electronico": "sara.mendoza16@example.com",
+        "usuario_discord": "sara501#1299",
+        "contrasena": "Riwi16A!z88",
+        "telefono": "3187091564",
+        "fecha_nacimiento": "10/10/2008",
+        "tipo_documento": "Tarjeta de identidad",
+        "numero_documento": "1051777776",
+        "genero": "Femenino",
+        "tipo_convenio": "Medellín Joven"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Atlántico",
+        "municipio": "Baranoa",
+        "sede_interes": "Barranquilla",
+        "estrato": "1",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Bachiller",
+        "titulo": "",
+        "conocimientos_programacion": "Básico",
+        "ocupacion": "Estudiante",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Óscar",
+        "apellido": "Medina",
+        "correo_electronico": "oscar.medina17@example.com",
+        "usuario_discord": "oscar72#4400",
+        "contrasena": "Riwi17A@z40",
+        "telefono": "3006042719",
+        "fecha_nacimiento": "02/02/1995",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1001888887",
+        "genero": "Masculino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Atlántico",
+        "municipio": "Sabanalarga",
+        "sede_interes": "Barranquilla",
+        "estrato": "3",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "Llamada telefónica"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Técnico",
+        "titulo": "Técnico Administrativo",
+        "conocimientos_programacion": "Ninguno",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Manuela",
+        "apellido": "Jiménez",
+        "correo_electronico": "manuela.jimenez18@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi18A$z57",
+        "telefono": "3174509628",
+        "fecha_nacimiento": "18/09/2003",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1001999998",
+        "genero": "Prefiero no decir",
+        "tipo_convenio": "Crack the Code"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Atlántico",
+        "municipio": "Santo Tomás",
+        "sede_interes": "Barranquilla",
+        "estrato": "2",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Tecnólogo",
+        "titulo": "Tecnólogo en Sistemas",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Esteban",
+        "apellido": "Duque",
+        "correo_electronico": "esteban.duque19@example.com",
+        "usuario_discord": "esteban331#2101",
+        "contrasena": "Riwi19A!z79",
+        "telefono": "3018472065",
+        "fecha_nacimiento": "05/12/1994",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1002111109",
+        "genero": "Masculino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Medellín",
+        "sede_interes": "Medellín",
+        "estrato": "5",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Maestría",
+        "titulo": "Maestría en Ciencia de Datos",
+        "conocimientos_programacion": "Avanzado",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Carolina",
+        "apellido": "Montoya",
+        "correo_electronico": "carolina.montoya20@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi20A@z21",
+        "telefono": "3059724816",
+        "fecha_nacimiento": "27/03/1998",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1002222220",
+        "genero": "Femenino",
+        "tipo_convenio": "Medellín Joven"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Bello",
+        "sede_interes": "Medellín",
+        "estrato": "2",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Especialización",
+        "titulo": "Especialización en Analítica de Datos",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Nicolás",
+        "apellido": "Marín",
+        "correo_electronico": "nicolas.marin21@example.com",
+        "usuario_discord": "nicolas88#6543",
+        "contrasena": "Riwi21A&z64",
+        "telefono": "3126509841",
+        "fecha_nacimiento": "11/11/2005",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1002333331",
+        "genero": "Masculino",
+        "tipo_convenio": "Crack the Code"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Itagüí",
+        "sede_interes": "Medellín",
+        "estrato": "3",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Profesional",
+        "titulo": "Comunicación Social",
+        "conocimientos_programacion": "Básico",
+        "ocupacion": "Estudiante",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Diana",
+        "apellido": "Cardona",
+        "correo_electronico": "diana.cardona22@example.com",
+        "usuario_discord": "diana210#3001",
+        "contrasena": "Riwi22A$z92",
+        "telefono": "3182346905",
+        "fecha_nacimiento": "24/07/2001",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1002444442",
+        "genero": "Femenino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Envigado",
+        "sede_interes": "Medellín",
+        "estrato": "4",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Llamada telefónica"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Técnico",
+        "titulo": "Técnico en Sistemas",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Tatiana",
+        "apellido": "Correa",
+        "correo_electronico": "tatiana.correa23@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi23A!z50",
+        "telefono": "3007815634",
+        "fecha_nacimiento": "01/04/2002",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1002555553",
+        "genero": "Otro",
+        "tipo_convenio": "Medellín Joven"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Sabaneta",
+        "sede_interes": "Medellín",
+        "estrato": "2",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Tecnólogo",
+        "titulo": "Tecnólogo en Sistemas",
+        "conocimientos_programacion": "Avanzado",
+        "ocupacion": "Independiente / Freelance",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Mauricio",
+        "apellido": "Velásquez",
+        "correo_electronico": "mauricio.velasquez24@example.com",
+        "usuario_discord": "mauricio101#7777",
+        "contrasena": "Riwi24A@z77",
+        "telefono": "3139065824",
+        "fecha_nacimiento": "29/12/1997",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1002666664",
+        "genero": "Masculino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Medellín",
+        "sede_interes": "Medellín",
+        "estrato": "6",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Especialización",
+        "titulo": "Especialización en Seguridad Informática",
+        "conocimientos_programacion": "Avanzado",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Kevin",
+        "apellido": "Gallego",
+        "correo_electronico": "kevin.gallego25@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi25A&z36",
+        "telefono": "3145609287",
+        "fecha_nacimiento": "13/05/2006",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1002777775",
+        "genero": "Masculino",
+        "tipo_convenio": "Crack the Code"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Rionegro",
+        "sede_interes": "Medellín",
+        "estrato": "2",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Bachiller",
+        "titulo": "Bachiller Técnico",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Estudiante",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Brayan",
+        "apellido": "Franco",
+        "correo_electronico": "brayan.franco26@example.com",
+        "usuario_discord": "brayan300#1902",
+        "contrasena": "Riwi26A$z81",
+        "telefono": "3209817546",
+        "fecha_nacimiento": "07/07/2000",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1002888886",
+        "genero": "Masculino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Bello",
+        "sede_interes": "Medellín",
+        "estrato": "1",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Llamada telefónica"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Técnico",
+        "titulo": "Técnico en Redes",
+        "conocimientos_programacion": "Básico",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Yeison",
+        "apellido": "Mejía",
+        "correo_electronico": "yeison.mejia27@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi27A!z68",
+        "telefono": "3012468097",
+        "fecha_nacimiento": "16/02/2005",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1002999997",
+        "genero": "Masculino",
+        "tipo_convenio": "Medellín Joven"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Medellín",
+        "sede_interes": "Medellín",
+        "estrato": "3",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Tecnólogo",
+        "titulo": "Tecnólogo en Desarrollo de Software",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Independiente / Freelance",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Santiago",
+        "apellido": "López",
+        "correo_electronico": "santiago.lopez28@example.com",
+        "usuario_discord": "santiago210#8080",
+        "contrasena": "Riwi28A@z24",
+        "telefono": "3156782049",
+        "fecha_nacimiento": "23/09/1999",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1003111108",
+        "genero": "Masculino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "BOGOTÁ, D.C.",
+        "municipio": "BOGOTÁ, D.C.",
+        "sede_interes": "Medellín",
+        "estrato": "4",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Profesional",
+        "titulo": "Contaduría Pública",
+        "conocimientos_programacion": "Básico",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Alejandra",
+        "apellido": "Hernández",
+        "correo_electronico": "alejandra.hernandez29@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi29A&z59",
+        "telefono": "3184029765",
+        "fecha_nacimiento": "01/02/2004",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1003222219",
+        "genero": "Femenino",
+        "tipo_convenio": "Crack the Code"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Cundinamarca",
+        "municipio": "Soacha",
+        "sede_interes": "Barranquilla",
+        "estrato": "2",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Tecnólogo",
+        "titulo": "Tecnólogo en Análisis de Datos",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Estudiante",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Hernán",
+        "apellido": "Ruiz",
+        "correo_electronico": "hernan.ruiz30@example.com",
+        "usuario_discord": "hernan777#4520",
+        "contrasena": "Riwi30A$z12",
+        "telefono": "3019054678",
+        "fecha_nacimiento": "04/04/1996",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1003333330",
+        "genero": "Masculino",
+        "tipo_convenio": "Medellín Joven"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Valle del Cauca",
+        "municipio": "SANTIAGO DE CALI",
+        "sede_interes": "Medellín",
+        "estrato": "3",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Llamada telefónica"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Especialización",
+        "titulo": "Especialización en Gerencia de Proyectos",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Camila",
+        "apellido": "Cabrera",
+        "correo_electronico": "camila.cabrera31@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi31A!z98",
+        "telefono": "3108745269",
+        "fecha_nacimiento": "20/06/2007",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1003444441",
+        "genero": "Femenino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Valle del Cauca",
+        "municipio": "Palmira",
+        "sede_interes": "Barranquilla",
+        "estrato": "2",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Bachiller",
+        "titulo": "Bachiller Académico",
+        "conocimientos_programacion": "Básico",
+        "ocupacion": "Estudiante",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Gustavo",
+        "apellido": "Salazar",
+        "correo_electronico": "gustavo.salazar32@example.com",
+        "usuario_discord": "gustavo90#3402",
+        "contrasena": "Riwi32A@z65",
+        "telefono": "3160928475",
+        "fecha_nacimiento": "09/09/1999",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1003555552",
+        "genero": "Masculino",
+        "tipo_convenio": "Crack the Code"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Bolívar",
+        "municipio": "CARTAGENA DE INDIAS",
+        "sede_interes": "Barranquilla",
+        "estrato": "5",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Profesional",
+        "titulo": "Ingeniería de Sistemas",
+        "conocimientos_programacion": "Avanzado",
+        "ocupacion": "Independiente / Freelance",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Lorena",
+        "apellido": "Morales",
+        "correo_electronico": "lorena.morales33@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi33A&z44",
+        "telefono": "3006182947",
+        "fecha_nacimiento": "12/12/2002",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1003666663",
+        "genero": "Femenino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Santander",
+        "municipio": "Bucaramanga",
+        "sede_interes": "Medellín",
+        "estrato": "3",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Técnico",
+        "titulo": "Técnico Administrativo",
+        "conocimientos_programacion": "Ninguno",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Cristian",
+        "apellido": "Ortiz",
+        "correo_electronico": "cristian.ortiz34@example.com",
+        "usuario_discord": "cristian501#6006",
+        "contrasena": "Riwi34A!z70",
+        "telefono": "3142759061",
+        "fecha_nacimiento": "25/05/1997",
+        "tipo_documento": "Cédula de ciudadanía",
+        "numero_documento": "1003777774",
+        "genero": "Masculino",
+        "tipo_convenio": "Medellín Joven"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Risaralda",
+        "municipio": "Pereira",
+        "sede_interes": "Medellín",
+        "estrato": "4",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "Llamada telefónica"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Profesional",
+        "titulo": "Ingeniería de Software",
+        "conocimientos_programacion": "Avanzado",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Colombiano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Verónica",
+        "apellido": "Pacheco",
+        "correo_electronico": "veronica.pacheco35@example.com",
+        "usuario_discord": "veronica12#9087",
+        "contrasena": "Riwi35A@z83",
+        "telefono": "3201468759",
+        "fecha_nacimiento": "14/01/1999",
+        "tipo_documento": "Cédula de extranjería",
+        "numero_documento": "1403888885",
+        "genero": "Femenino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Valle del Cauca",
+        "municipio": "SANTIAGO DE CALI",
+        "sede_interes": "Medellín",
+        "estrato": "3",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Profesional",
+        "titulo": "Administración de Empresas",
+        "conocimientos_programacion": "Básico",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Venezolano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Franklin",
+        "apellido": "Barrios",
+        "correo_electronico": "franklin.barrios36@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi36A&z29",
+        "telefono": "3017695284",
+        "fecha_nacimiento": "22/02/1996",
+        "tipo_documento": "Cédula de extranjería",
+        "numero_documento": "1403999996",
+        "genero": "Masculino",
+        "tipo_convenio": "Crack the Code"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Santander",
+        "municipio": "Bucaramanga",
+        "sede_interes": "Barranquilla",
+        "estrato": "2",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "Llamada telefónica"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Técnico",
+        "titulo": "Técnico en Sistemas",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Independiente / Freelance",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Venezolano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "José",
+        "apellido": "Fernández",
+        "correo_electronico": "jose.fernandez37@example.com",
+        "usuario_discord": "jose900#2222",
+        "contrasena": "Riwi37A!z61",
+        "telefono": "3150837196",
+        "fecha_nacimiento": "03/03/2001",
+        "tipo_documento": "Cédula de extranjería",
+        "numero_documento": "1404111107",
+        "genero": "Masculino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Medellín",
+        "sede_interes": "Medellín",
+        "estrato": "3",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Tecnólogo",
+        "titulo": "Tecnólogo en Desarrollo de Software",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Venezolano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Gabriela",
+        "apellido": "Márquez",
+        "correo_electronico": "gabriela.marquez38@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi38A@z47",
+        "telefono": "3192746085",
+        "fecha_nacimiento": "11/08/2000",
+        "tipo_documento": "Cédula de extranjería",
+        "numero_documento": "1404222218",
+        "genero": "Femenino",
+        "tipo_convenio": "Medellín Joven"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Atlántico",
+        "municipio": "Barranquilla",
+        "sede_interes": "Barranquilla",
+        "estrato": "4",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Profesional",
+        "titulo": "Ingeniería de Sistemas",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Venezolano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Miguel",
+        "apellido": "Rivas",
+        "correo_electronico": "miguel.rivas39@example.com",
+        "usuario_discord": "miguel55#9090",
+        "contrasena": "Riwi39A$z74",
+        "telefono": "3005937614",
+        "fecha_nacimiento": "19/05/1998",
+        "tipo_documento": "Pasaporte",
+        "numero_documento": "80433329",
+        "genero": "Masculino",
+        "tipo_convenio": "Crack the Code"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "BOGOTÁ, D.C.",
+        "municipio": "BOGOTÁ, D.C.",
+        "sede_interes": "Medellín",
+        "estrato": "3",
+        "horario_estudio": "Mañana (6:00 AM - 2:00 PM)",
+        "medio_comunicacion": "WhatsApp"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Maestría",
+        "titulo": "Maestría en Ingeniería de Software",
+        "conocimientos_programacion": "Avanzado",
+        "ocupacion": "Empleado",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Venezolano"
+      }
+    },
+    {
+      "pagina1_datos": {
+        "nombre": "Karla",
+        "apellido": "Urdaneta",
+        "correo_electronico": "karla.urdaneta40@example.com",
+        "usuario_discord": "",
+        "contrasena": "Riwi40A!z30",
+        "telefono": "3168402751",
+        "fecha_nacimiento": "30/10/2003",
+        "tipo_documento": "Cédula de extranjería",
+        "numero_documento": "1404444440",
+        "genero": "Femenino",
+        "tipo_convenio": "Ninguno"
+      },
+      "pagina2_ubicacion": {
+        "departamento": "Antioquia",
+        "municipio": "Bello",
+        "sede_interes": "Medellín",
+        "estrato": "2",
+        "horario_estudio": "Tarde (2:00 PM - 10:00 PM)",
+        "medio_comunicacion": "Correo electrónico"
+      },
+      "pagina3_formacion": {
+        "nivel_educativo": "Técnico",
+        "titulo": "Técnico en Programación",
+        "conocimientos_programacion": "Intermedio",
+        "ocupacion": "Estudiante",
+        "acepta_politica_datos": true,
+        "acepta_terminos_chatbot": true
+      },
+      "metadata": {
+        "origen": "Venezolano"
+      }
+    }
+  ]
+}
